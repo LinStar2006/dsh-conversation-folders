@@ -1,0 +1,5 @@
+# 组合包 patch：被 profile 的 dsh.profile.bundles 选中后自动挂载。
+# 条目 id 同时是 settings 配置的 namespace，用 profile patch 覆盖其中的 config 即可改配置。
+- insert:
+    - id: conversation-folders
+      name: "dsh-conversation-folders"

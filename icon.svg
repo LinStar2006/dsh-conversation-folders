@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Conversation Folders">
+  <path fill="#4C8DF6" d="M6 12a4 4 0 0 1 4-4h9.4l3.8 4.2H38a4 4 0 0 1 4 4V36a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4V12Z"/>
+  <path fill="#8FB7FF" d="M6 18.2h36V36a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4V18.2Z"/>
+  <path fill="#FFFFFF" fill-opacity=".85" d="M15 26h18v2.6H15Zm0 5.4h11V34H15Z"/>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Conversation Folders",
+    "description": "Give every DSH conversation its own working folder: new chats switch automatically, legacy files are migrated from session records, and a header button opens the current conversation's folder."
+  }
+}
