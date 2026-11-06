@@ -1,5 +1,7 @@
 # Conversation Folders
 
+**English** | [简体中文](README.zh-CN.md)
+
 A **DSH (DeepSeek Harness)** plugin that gives every conversation its own workspace folder — so files from different conversations no longer pile up in one shared directory.
 
 - Each new conversation gets `<workspace>/conversations/<date>_<title>__<session-id>/`, and the session's working directory is switched there before the first model request.
@@ -64,6 +66,24 @@ An entry is moved only when exactly one session (after roll-up) has strong evide
 Migration is idempotent: it runs once, records completion in the index, and skips missing sources or existing targets. Workspace roots that contain a `.git` directory are skipped by default.
 
 ## Installation
+
+### Option A — install from the DSH Plugins page (recommended)
+
+1. Open **Plugins** in the left sidebar and click **Add plugin**.
+2. Paste one of the following into the input box:
+
+   ```
+   https://github.com/LinStar2006/dsh-conversation-folders
+   ```
+
+   - Shorthand form: `github:LinStar2006/dsh-conversation-folders`
+   - Local checkout: `C:\path\to\dsh-conversation-folders`
+
+3. Keep the install source on its default value, click **Install**, then restart DSH when prompted.
+
+The installer adds the package to the profile's `dependencies` and to `dsh.profile.bundles` for you. That registration is what makes the plugin appear under **Plugins → Installed plugins**, and it is why you do not need to edit `cordis.patch.yml` by hand.
+
+### Option B — install manually into the profile
 
 This package declares `dsh.bundle.patch`, so it is installed as a DSH **bundle**:
 

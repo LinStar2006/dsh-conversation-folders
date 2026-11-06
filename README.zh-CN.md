@@ -1,5 +1,7 @@
 # 对话独立文件夹（dsh-conversation-folders）
 
+[English](README.md) | **简体中文**
+
 这是一个 **DSH（DeepSeek Harness）** 插件：为每个对话分配独立的工作文件夹，避免不同对话产生的文件全部堆在同一个工作区根目录里。
 
 - 新对话会自动创建并进入 `<工作区>/conversations/<日期>_<标题>__<会话 id 前 8 位>/`，从第一轮请求开始就在自己的目录里工作。
@@ -64,6 +66,24 @@ DSH 的会话标题在第一轮请求开始后才由模型生成。插件必须�
 迁移是幂等的：只执行一次，把完成状态写进索引；源不存在或目标已存在都会跳过。工作区根目录包含 `.git` 时默认跳过迁移。
 
 ## 安装
+
+### 方式 A：从 DSH 插件页安装（推荐）
+
+1. 打开左侧「插件」页，点右上角 **添加插件**。
+2. 在输入框里粘贴下面任意一种：
+
+   ```
+   https://github.com/LinStar2006/dsh-conversation-folders
+   ```
+
+   - 简写形式：`github:LinStar2006/dsh-conversation-folders`
+   - 本地源码目录：`C:\path\to\dsh-conversation-folders`
+
+3. 安装源保持默认值，点 **安装**，按提示重启 DSH。
+
+安装器会自动把包写进 profile 的 `dependencies` 和 `dsh.profile.bundles`。正是这次登记让插件出现在「插件 → 已安装插件」里，所以不需要手动改 `cordis.patch.yml`。
+
+### 方式 B：手动复制到 profile
 
 本包声明了 `dsh.bundle.patch`，因此按 DSH 的「组合包（bundle）」方式安装：
 
